@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <style> 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        h2 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            padding: 20px;
+            margin: auto;
+            background-color: #F1EFEC;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .terms {
+            margin: 5px;
+        }
+        .terms label {
+            color: #4d4c4c;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1B56FD;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #0118D8;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>SignUp form</h2>
+    <form>
+        <label>First Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Last Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label>Password:</label>
+        <input type="password" id="passwd" required>
+
+        <label>Confirm Password:</label>
+        <input type="password" id="passwd" required>
+
+        <div class="terms">
+            <label><input type="checkbox" name="checkbox" id="checkbox">I agree to the terms & conditions.</label>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
